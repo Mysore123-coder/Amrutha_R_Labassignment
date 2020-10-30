@@ -4,11 +4,7 @@
  * Date : 23/10/2020
  */
 import java.util.*;
-/*
- * author : Amrutha R
- * Desc : Array of Salution and name 
- * Date : 23/10/2020
- */
+
 public class SalutationNames {
 
 	public static void main(String[] args) {
@@ -22,6 +18,7 @@ public class SalutationNames {
 			String temp1= "female";
 			System.out.println("Enter the marital status : ");
 			String ms = s.nextLine();
+			s.close();
 			String temp2= "unmarried";
 			if(gender.equalsIgnoreCase(temp1)) {
 					if(ms.equalsIgnoreCase(temp2)) {

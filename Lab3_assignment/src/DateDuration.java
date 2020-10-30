@@ -13,13 +13,14 @@ public class DateDuration {
 		String dayInput=sc.nextLine();
 		String monthInput=sc.nextLine();
 		String yearInput=sc.nextLine();
+		sc.close();
 		int d = Integer.parseInt( yearInput ); // enter year[ie. 1996]
 		int m = Integer.parseInt( monthInput );  // 1-12 for January-December.
 		int y = Integer.parseInt( dayInput );  //1-28/31 
 
 		LocalDate date = LocalDate.of( y , m , d );
 	    LocalDate now = LocalDate.now();
-	     Period diff = Period.between(date, now);
+	    Period diff = Period.between(date, now);
 	 
 	     System.out.println("Difference is " + diff.getYears()+" " +"years"+ " "+
 	                    diff.getMonths()+" "+"months"+" "+ diff.getDays()+" "+"days");

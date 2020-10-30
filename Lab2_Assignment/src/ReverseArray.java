@@ -13,6 +13,7 @@ public class ReverseArray {
 		System.out.println("Enter the size of an array :");
 		Scanner s=new Scanner(System.in);
 		int size=s.nextInt();
+		s.close();
 		System.out.println("Enter the array elements :");
 		for(int i=0; i<size; i++) {
 			arr[i]=s.nextInt();
@@ -24,12 +25,13 @@ public class ReverseArray {
 	private static void getSorted(int[] arr, int size) {
 		int[] b = new int[size]; 
         int j = size; 
+		//reverse the array
         for (int i = 0; i < size; i++) { 
             b[j - 1] = arr[i]; 
             j = j - 1; 
         } 
   
-        /*printing the reversed array*/
+        //printing the reversed array
         System.out.println("Reversed array elements :");
         for (int k = 0; k < size; k++) { 
             System.out.println(b[k]); 

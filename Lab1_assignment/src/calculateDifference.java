@@ -2,6 +2,7 @@
 /**
  * author: Amrutha R
  * desc: calculate difference
+ * date : 22/10/2020
  */
 import java.util.*;
 
@@ -12,20 +13,21 @@ public class calculateDifference {
 		System.out.println("Enter the number :");
 		Scanner s=new Scanner(System.in);
 		int number =s.nextInt();
-		int result = sumofsquare(number) - squareofsum(number);
-		System.out.println("The difference between sum of sqares of n number:" +result);;
+		s.close();
+		int result = sumOfSquare(number) - squareOfSum(number); //calculates the diference of sum of square and square of sum 
+		System.out.println("The difference between sum of sqares of n number:" +result);
 	}
-	static int sumofsquare(int n) {
+	static int sumOfSquare(int n) {
 		int sum=0;
 		for(int i =1; i<= n;i++) {
-			sum +=(i*i);
+			sum +=(i*i); //calculates the sum of square
 		}
 		return sum;
 	}
-	static int squareofsum(int n) {
+	static int squareOfSum(int n) {
 		int square=0, sum =0;
 		for(int i =1; i<= n;i++) {
-			sum +=i;
+			sum +=i; // calculates the square of sum
 		}
 		return sum*sum;
 }

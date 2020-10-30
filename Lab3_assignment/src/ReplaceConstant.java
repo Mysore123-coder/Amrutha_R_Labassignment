@@ -12,6 +12,7 @@ public class ReplaceConstant
 		System.out.print("Enter a string: ");
 		Scanner sc = new Scanner(System.in);
 		String string= sc.nextLine();
+		sc.close();
 	    System.out.println(replaceConsonants(string.toCharArray())); 
 	}
 	public static String replaceConsonants(char[] string)  

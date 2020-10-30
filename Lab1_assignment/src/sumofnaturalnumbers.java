@@ -4,13 +4,14 @@
  */
 import java.util.*;
 
-public class sumofnaturalnumbers {
+public class sumofNaturalNumbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Enter the number :");
 		Scanner s = new Scanner(System.in);
 		int number = s.nextInt();
+		s.close();
 		calculateSum(number);
 				
 			}

@@ -1,6 +1,11 @@
+/**
+ * author: Amrutha R
+ * desc: Prime numbers within the range
+ * date : 22/10/2020
+ */
 import java.util.*;
 
-public class primenumber {
+public class primeNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

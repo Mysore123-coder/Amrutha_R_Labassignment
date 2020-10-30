@@ -1,6 +1,6 @@
 /**
  * author: Amrutha R
- * desc: Traffic light
+ * desc: Traffic light Simulator
  */
 import java.util.*;
 
@@ -12,6 +12,7 @@ public class TrafficLightSimulates {
 		System.out.println("1.Red\n2.Yellow\n3.Green\n Enter your choice :");
 		Scanner s=new Scanner(System.in);
 		int choice=s.nextInt();
+		s.close();
 		switch(choice) {
 		case 1: System.out.println("Stop");
 				break;

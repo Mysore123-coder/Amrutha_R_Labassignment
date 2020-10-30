@@ -11,6 +11,7 @@ public class PositiveString {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the string :");
 		String s= sc.nextLine();
+		sc.close();
 		if (isAlphabaticOrder(s))  // check whether the string is in alphabetical order or not 
 			System.out.println("String is positive");  
 		else

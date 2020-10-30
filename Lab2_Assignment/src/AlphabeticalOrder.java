@@ -13,6 +13,7 @@ public class AlphabeticalOrder {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of strings : ");
         number = sc.nextInt();   
+        s.close();
         String strings[] = new String[number];
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the Strings one by one:");
@@ -22,6 +23,7 @@ public class AlphabeticalOrder {
         }
         for (int i = 0; i < number; i++) 
         {
+            //sort the string in alphabetical order
             for (int j = i + 1; j < number; j++) { 
                 if (strings[i] != strings[j]) 
                 {

@@ -16,12 +16,14 @@ public class SecondSmallest {
 		System.out.println("Enter the array elements :");
 		for(int i=0; i<size; i++) {
 			arr[i]=s.nextInt();
+			s.close();
 		}
 		getSecondSmallest(arr,size);
 		System.out.println("Second smallest element is :"+arr[size-2]);
 	}
 	
 	private static int getSecondSmallest(int[] arr, int size) {
+		//second smallest number is calculated
 		for(int j=0;j<(size-1);j++) {
 			for(int k=0;k<size-j-1;k++) {
 				if(arr[k]<arr[k+1]) {

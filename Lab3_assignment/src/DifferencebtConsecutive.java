@@ -16,7 +16,8 @@ public class DifferencebtConsecutive
 		 System.out.println("Enter the array: ");  
 		 for(int i = 0; i < length; i++)  
 		 {  
-				 array[i] = sc.nextInt();  
+				 array[i] = sc.nextInt(); 
+				 sc.close(); 
 		 }  
 		 
 		 difference(array, length);  

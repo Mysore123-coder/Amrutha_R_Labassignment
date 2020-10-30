@@ -1,6 +1,7 @@
 /**
  * author: Amrutha R
  * desc: sum of cube
+ * date : 22/10/2020
  */
 import java.util.*;
 

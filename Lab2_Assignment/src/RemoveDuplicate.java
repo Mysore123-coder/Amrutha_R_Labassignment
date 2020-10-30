@@ -20,6 +20,7 @@ public class RemoveDuplicate {
 	}
 	public static int RemoveDuplicate(int array[],int length)
 	{
+		//removes the duplicate string
 		if(length == 0 || length == 1)
 		{
 			return length;
@@ -37,6 +38,7 @@ public class RemoveDuplicate {
 		}
 		public static void DescendingOrder(int array[],int length)
 		{
+			//sort the array in descending order
 			int temp = 0;
 			for(int i = 0;i < length;i++)
 			{

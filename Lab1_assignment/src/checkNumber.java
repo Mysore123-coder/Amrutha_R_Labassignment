@@ -1,3 +1,9 @@
+
+/**
+ * author: Amrutha R
+ * desc: Power of two
+ * date : 22/10/2020
+ */
 import java.util.*;
 public class checkNumber {
 
@@ -6,6 +12,7 @@ public class checkNumber {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the number :");
 		int number=s.nextInt();
+		s.close();
 		boolean result= checkNumber(number);
 		if(result==true)
 			System.out.println("It is a power of two");

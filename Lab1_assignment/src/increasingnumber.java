@@ -1,3 +1,8 @@
+/**
+ * author: Amrutha R
+ * desc: Sorting in increasing number
+ * date : 22/10/2020
+ */
 import java.util.*;
 public class increasingnumber {
 
@@ -6,6 +11,7 @@ public class increasingnumber {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the number :");
 		int number=s.nextInt();
+		s.close();
 		boolean check= increasingnumber(number);
 		if(check == true)
 			System.out.println("In increasing order");
