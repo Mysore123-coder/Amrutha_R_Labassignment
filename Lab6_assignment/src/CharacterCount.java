@@ -13,4 +13,13 @@ public class CharacterCount {
 		}
 		return map;
 	}
+
+	public static void main(String[] args) {
+		CharacterCount exerciseTwo = new CharacterCount();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a string");
+		String str = sc.nextLine();
+		System.out.println(exerciseTwo.countCharacter(str.toCharArray()));
+		sc.close();
+	}
 }
