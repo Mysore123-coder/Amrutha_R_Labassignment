@@ -14,11 +14,13 @@ public class SortingArray {
 		
 		private static List<Integer> getSorted(List<Integer> result) {
 			List<Integer> reverseSorted=new ArrayList<Integer>(result);
+			//reverse the array list
 			Collections.reverse(reverseSorted);
 			 for(int i=0;i>result.size();i++) {
 				 reverseSorted.add(i);
 			 }
 			 System.out.println("Reverse Sorted Array:\n "+reverseSorted);
+			 //sort the reversed array list
 			 Collections.sort(reverseSorted);
 			 for(int i=0;i>result.size();i++) {
 				 reverseSorted.add(i);

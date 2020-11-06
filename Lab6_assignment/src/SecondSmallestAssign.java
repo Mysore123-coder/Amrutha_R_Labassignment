@@ -14,6 +14,7 @@ public class SecondSmallestAssign {
               for(int i: arr){
                      intList.add(i);
               }
+              //sort the array list
               Collections.sort(intList);
               return intList.get(1);
        }
@@ -21,6 +22,7 @@ public class SecondSmallestAssign {
     	   	  SecondSmallestAssign p = new SecondSmallestAssign();
               int arr[] = {43,54,65,76,32,76,87,43,66,7,32,54,43};
               int i = p.getSecondSmallest(arr);
+              //print the second smallest
               System.out.println(i);
        }
 

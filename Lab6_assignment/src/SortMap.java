@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class SortMap {
 		public List<Integer> sortMapToList(Map<Integer, Integer> map){
 			List<Integer> list = new ArrayList<Integer>(map.values());
+			//sort the list
 			Collections.sort(list);
 			return list;
 		}
